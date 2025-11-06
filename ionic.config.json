@@ -1,0 +1,7 @@
+{
+  "name": "Ej2_Tema3_IvanRoldanRamos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
