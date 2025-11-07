@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #form="ngForm" (ngSubmit)="guardar(form)">
+    <ion-item>
+      <ion-input label="Nombre" name="nombre" [(ngModel)]="cliente.nombre" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellido" name="apellido" [(ngModel)]="cliente.apellido" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Email" name="email" type="email" [(ngModel)]="cliente.email" required email></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Nacionalidad" name="nacionalidad" [(ngModel)]="cliente.nacionalidad" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="!form.valid">Guardar</ion-button>
+  </form>
+</ion-content>

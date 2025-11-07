@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Datos del Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="cliente">
+    <ion-card-header>
+      <ion-card-title>{{ cliente.nombre }} {{ cliente.apellido }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Email:</strong> {{ cliente.email }}</p>
+      <p><strong>Nacionalidad:</strong> {{ cliente.nacionalidad }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
